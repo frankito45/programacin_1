@@ -32,7 +32,7 @@ print(sumar_digitos(432))
 def calcular_fibonacci(numero:int) -> int:
 
     'calcula el numero fibonacci'
-    parse_num = get_int(numero)
+    parse_num = get_int(numero,'error al ingresar numero',0,100)
     
     if numero < 0:
         numero = 1

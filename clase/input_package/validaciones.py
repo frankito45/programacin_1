@@ -6,11 +6,12 @@ def validacion_int(num:int, minimo:int, maximo:int, reintento:int, mesaje_error)
     '''valida si el numero es entero segun los parametros dados
     parametros: minimo, maximo, reintentos'''
 
-    parse_int = int(num)
+    parse_int = num
     validacion = True
     contador = 0
-
-    while parse_int < minimo or parse_int > maximo:
+    
+    while type(parse_int) == str or parse_int < minimo or parse_int > maximo :
+        
         contador += 1
         num = input('ingrese un numero entre los rangos: ')
         parse_int = int(num)

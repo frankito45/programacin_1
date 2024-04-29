@@ -1,5 +1,5 @@
 
-from validaciones import validacion_int, validacion_string 
+from .validaciones import *
 
 
 def get_float(num: float, mensaje_error:str, minimo:float, maximo:float, reintento: float)-> float|None:
