@@ -1,5 +1,8 @@
 
 
+
+
+
 def par_inpar(num) -> bool:
     'recive un numero si es par devuelve true '
     flag = True
